@@ -15,7 +15,8 @@
   
   <meta name="theme-color" content="#2f4154">
   
-    <meta name="description" content="">
+    <meta name="description" content="测试平台：Openwrt
+在/etc/hotplug.d/iface/下添加30-routes文件,系统将在接口状态发生生变化时执行该脚本。">
   
   <meta name="author" content="Sakari">
   <meta name="keywords" content="">
@@ -248,6 +249,8 @@
             <div class="markdown-body">
               <p>测试平台：Openwrt</p>
 <p>在<code>/etc/hotplug.d/iface/</code>下添加<code>30-routes</code>文件,系统将在接口状态发生生变化时执行该脚本。</p>
+<span id="more"></span>
+
 <p>然后在<code>30-routes</code>中写入</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-meta">#!/bin/sh</span><br><br><span class="hljs-keyword">if</span> [ <span class="hljs-string">&quot;<span class="hljs-variable">$ACTION</span>&quot;</span> = <span class="hljs-string">&quot;ifdown&quot;</span> -a <span class="hljs-string">&quot;<span class="hljs-variable">$INTERFACE</span>&quot;</span> = <span class="hljs-string">&quot;pptp-vpn0&quot;</span> ]<br><span class="hljs-keyword">then</span><br><br><span class="hljs-comment">#在此添加断开后的代码</span><br><br><span class="hljs-keyword">fi</span><br><br><span class="hljs-keyword">if</span> [ <span class="hljs-string">&quot;<span class="hljs-variable">$ACTION</span>&quot;</span> = <span class="hljs-string">&quot;ifup&quot;</span> -a <span class="hljs-string">&quot;<span class="hljs-variable">$INTERFACE</span>&quot;</span> = <span class="hljs-string">&quot;pptp-vpn0&quot;</span> ]<br><span class="hljs-keyword">then</span><br><br><span class="hljs-comment">#在此添加连接后需要执行的代码</span><br><br><span class="hljs-keyword">fi</span><br></code></pre></td></tr></table></figure>
 
@@ -267,7 +270,7 @@
                   <div class="post-meta mr-3">
                     <i class="iconfont icon-category"></i>
                     
-                      <a class="hover-with-bg" href="/categories/router/">router</a>
+                      <a class="hover-with-bg" href="/categories/Router/">Router</a>
                     
                   </div>
                 
