@@ -14,12 +14,11 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   
   <meta name="theme-color" content="#2f4154">
-  <meta name="description" content="Prim算法
-poj.org 2485.">
+  <meta name="description" content="">
   <meta name="author" content="Sakari">
   <meta name="keywords" content="">
   
-  <title>poj2485 Prim算法 - Sakari&#39;s Blog</title>
+  <title>Windows下为PowerShell/CMD/Git设置代理 - Sakari&#39;s Blog</title>
 
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
 
@@ -175,12 +174,12 @@ poj.org 2485.">
 </nav>
 
     <div class="banner" id="banner" parallax=true
-         style="background: url('/img/default.png') no-repeat center center;
+         style="background: url('/img/posts/proxy.webp') no-repeat center center;
            background-size: cover;">
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
           <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="poj2485 Prim算法">
+            <span class="h2" id="subtitle" title="Windows下为PowerShell/CMD/Git设置代理">
               
             </span>
 
@@ -190,8 +189,8 @@ poj.org 2485.">
   
     <span class="post-meta">
       <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-      <time datetime="2018-03-22 00:00" pubdate>
-        2018年3月22日 凌晨
+      <time datetime="2021-03-17 17:01" pubdate>
+        2021年3月17日 下午
       </time>
     </span>
   
@@ -202,7 +201,7 @@ poj.org 2485.">
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      339 字
+      434 字
     </span>
   
 
@@ -212,7 +211,7 @@ poj.org 2485.">
       <i class="iconfont icon-clock-fill"></i>
       
       
-      5
+      7
        分钟
     </span>
   
@@ -242,14 +241,27 @@ poj.org 2485.">
         <div class="py-5" id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">poj2485 Prim算法</h1>
+            <h1 style="display: none">Windows下为PowerShell/CMD/Git设置代理</h1>
             
             <div class="markdown-body">
-              <p>Prim算法</p>
-<p><a target="_blank" rel="noopener" href="http://poj.org/problem?id=2485">poj.org 2485</a>.</p>
-<span id="more"></span>
+              <h2 id="PowerShell"><a href="#PowerShell" class="headerlink" title="PowerShell"></a>PowerShell</h2><h3 id="1-在-PowerShell-窗口中运行如下指令："><a href="#1-在-PowerShell-窗口中运行如下指令：" class="headerlink" title="1. 在 PowerShell 窗口中运行如下指令："></a>1. 在 <code>PowerShell</code> 窗口中运行如下指令：</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-keyword">if</span> (!(Test-Path -Path <span class="hljs-variable">$PROFILE</span> )) &#123; New-Item -Type File -Path <span class="hljs-variable">$PROFILE</span> -Force &#125;<br>notepad <span class="hljs-variable">$PROFILE</span><br></code></pre></td></tr></table></figure>
 
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br></pre></td><td class="code"><pre><code class="hljs cpp"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&quot;stdafx.h&quot;</span></span><br><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;iostream&gt;</span></span><br><span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> <span class="hljs-built_in">std</span>;<br><br><span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> MAX 1000</span><br><span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> MAXCOST 0x3f3f3f3f</span><br><br><span class="hljs-keyword">int</span> graph[MAX][MAX];<br><br><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">prim</span><span class="hljs-params">(<span class="hljs-keyword">int</span> graph[][MAX], <span class="hljs-keyword">int</span> n)</span> <span class="hljs-comment">//n顶点个数</span></span><br><span class="hljs-function"></span>&#123;<br>	<span class="hljs-keyword">int</span> lowcost[MAX]; <span class="hljs-comment">//lowcost[i]:以i为终点的边的最小权值,lowcost[i]=0表示i点加入了MST</span><br>	<span class="hljs-keyword">int</span> mst[MAX]; <span class="hljs-comment">//mst[i]:对应lowcost[i]的起点,mst[i]=0表示起点i加入MST</span><br>	<span class="hljs-keyword">int</span> i, j, min, minid;<br>	<span class="hljs-keyword">int</span> max = <span class="hljs-number">0</span>;<br>	<span class="hljs-keyword">for</span> (i = <span class="hljs-number">2</span>; i &lt;= n; i++)<br>	&#123;<br>		lowcost[i] = graph[<span class="hljs-number">1</span>][i]; <span class="hljs-comment">//从1开始到所有点的权值</span><br>		mst[i] = <span class="hljs-number">1</span>; <span class="hljs-comment">//对应lowcost[i]的起点为1</span><br>	&#125;<br>	mst[<span class="hljs-number">1</span>] = <span class="hljs-number">0</span>; <span class="hljs-comment">//1点在MST中</span><br>	<span class="hljs-keyword">for</span> (i = <span class="hljs-number">2</span>; i &lt;= n; i++)<br>	&#123;<br>		min = MAXCOST; <span class="hljs-comment">//min为最小权值</span><br>		minid = <span class="hljs-number">0</span>; <span class="hljs-comment">//最小权值对应的点</span><br>		<span class="hljs-keyword">for</span> (j = <span class="hljs-number">2</span>; j &lt;= n; j++)<br>		&#123;<br>			<span class="hljs-keyword">if</span> (lowcost[j] &lt; min &amp;&amp; lowcost[j] != <span class="hljs-number">0</span>)<br>			&#123;<br>				min = lowcost[j];<br>				minid = j;<br>			&#125;<br>		&#125;<br>		<span class="hljs-comment">//输出示例V1-V3=1</span><br>		<span class="hljs-keyword">if</span> (min &gt; max)<br>			max = min; <span class="hljs-comment">//最小权值累加</span><br>		lowcost[minid] = <span class="hljs-number">0</span>; <span class="hljs-comment">//加入MST</span><br>		<span class="hljs-keyword">for</span> (j = <span class="hljs-number">2</span>; j &lt;= n; j++) <span class="hljs-comment">//更新lowcost[]和mst[]</span><br>		&#123;<br>			<span class="hljs-keyword">if</span> (graph[minid][j] &lt; lowcost[j] &amp;&amp; lowcost[j] != <span class="hljs-number">0</span>)<br>			&#123;<br>				lowcost[j] = graph[minid][j];<br>				mst[j] = minid;<br>			&#125;<br>		&#125;<br>	&#125;<br>	<span class="hljs-keyword">return</span> max;<br>&#125;<br><br><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span><br><span class="hljs-function"></span>&#123;<br>	<span class="hljs-keyword">int</span> T;<br>	<span class="hljs-keyword">int</span> s;<br>	<span class="hljs-keyword">int</span> sum;<br>	<span class="hljs-built_in">memset</span>(graph, MAXCOST, <span class="hljs-keyword">sizeof</span>(graph));<br>	<span class="hljs-built_in">scanf</span>(<span class="hljs-string">&quot;%d&quot;</span>, &amp;T);<br>	<span class="hljs-keyword">while</span> (T--)<br>	&#123;<br>		<span class="hljs-built_in">scanf</span>(<span class="hljs-string">&quot;%d&quot;</span>, &amp;s);<br>		<span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">1</span>; i &lt; s + <span class="hljs-number">1</span>; i++)<br>			<span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> j = <span class="hljs-number">1</span>; j &lt; s + <span class="hljs-number">1</span>; j++)<br>			&#123;<br>				<span class="hljs-built_in">scanf</span>(<span class="hljs-string">&quot;%d&quot;</span>, &amp;graph[i][j]);<br>				<span class="hljs-keyword">if</span> (!graph[i][j])<br>					graph[i][j] = MAXCOST;<br>			&#125;<br>		sum = prim(graph, s);<br>		<span class="hljs-built_in">cout</span> &lt;&lt; sum &lt;&lt; <span class="hljs-built_in">endl</span>;<br>	&#125;<br><br>	system(<span class="hljs-string">&quot;pause&quot;</span>);<br>&#125;<br></code></pre></td></tr></table></figure>
+<h3 id="2-在打开的记事本中添加如下代码："><a href="#2-在打开的记事本中添加如下代码：" class="headerlink" title="2. 在打开的记事本中添加如下代码："></a>2. 在打开的记事本中添加如下代码：</h3><p>注意修改第九行代理地址</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># Set-Proxy command</span><br><span class="hljs-keyword">if</span> (<span class="hljs-variable">$env</span>:HTTP_PROXY -ne <span class="hljs-variable">$null</span>)&#123;<br>	Write-Output <span class="hljs-string">&quot;Proxy Enabled as <span class="hljs-variable">$env</span>:HTTP_PROXY&quot;</span>;<br>&#125;<br><br>Function <span class="hljs-function"><span class="hljs-title">SetProxy</span></span>() &#123;<br>    Param(<br>        <span class="hljs-comment"># 改成自己的代理地址</span><br>        <span class="hljs-variable">$Addr</span> = <span class="hljs-string">&#x27;http://127.0.0.1:19810&#x27;</span>,<br>        [switch]<span class="hljs-variable">$ApplyToSystem</span><br>    )<br><br>    <span class="hljs-variable">$env</span>:HTTP_PROXY = <span class="hljs-variable">$Addr</span>;<br>    <span class="hljs-variable">$env</span>:HTTPS_PROXY = <span class="hljs-variable">$Addr</span>;<br>    <span class="hljs-variable">$env</span>:http_proxy = <span class="hljs-variable">$Addr</span>;<br>    <span class="hljs-variable">$env</span>:https_proxy = <span class="hljs-variable">$Addr</span>;<br><br>	[Net.WebRequest]::DefaultWebProxy = New-Object Net.WebProxy <span class="hljs-variable">$Addr</span>;<br>	<span class="hljs-keyword">if</span> (<span class="hljs-variable">$ApplyToSystem</span>) &#123;<br>		<span class="hljs-variable">$matchedResult</span> = ValidHttpProxyFormat <span class="hljs-variable">$Addr</span>;<br>		<span class="hljs-comment"># Matched result: [URL Without Protocol][Input String]</span><br>		<span class="hljs-keyword">if</span> (-not (<span class="hljs-variable">$matchedResult</span> -eq <span class="hljs-variable">$null</span>)) &#123;<br>			SetSystemProxy <span class="hljs-variable">$matchedResult</span>.1;<br>		&#125;<br>	&#125;<br>	Write-Output <span class="hljs-string">&quot;Successful set proxy as <span class="hljs-variable">$Addr</span>&quot;</span>;<br>&#125;<br>Function <span class="hljs-function"><span class="hljs-title">ClearProxy</span></span>() &#123;<br>    Param(<br>        <span class="hljs-variable">$Addr</span> = <span class="hljs-variable">$null</span>,<br>        [switch]<span class="hljs-variable">$ApplyToSystem</span><br>    )<br><br>    <span class="hljs-variable">$env</span>:HTTP_PROXY = <span class="hljs-variable">$Addr</span>;<br>    <span class="hljs-variable">$env</span>:HTTPS_PROXY = <span class="hljs-variable">$Addr</span>;<br>    <span class="hljs-variable">$env</span>:http_proxy = <span class="hljs-variable">$Addr</span>;<br>    <span class="hljs-variable">$env</span>:https_proxy = <span class="hljs-variable">$Addr</span>;<br><br>	[Net.WebRequest]::DefaultWebProxy = New-Object Net.WebProxy;<br>	<span class="hljs-keyword">if</span> (<span class="hljs-variable">$ApplyToSystem</span>) &#123; SetSystemProxy <span class="hljs-variable">$null</span>; &#125;<br>	Write-Output <span class="hljs-string">&quot;Successful unset all proxy variable&quot;</span>;<br><br>&#125;<br>Function SetSystemProxy(<span class="hljs-variable">$Addr</span> = <span class="hljs-variable">$null</span>) &#123;<br>    Write-Output <span class="hljs-variable">$Addr</span><br>    <span class="hljs-variable">$proxyReg</span> = <span class="hljs-string">&quot;HKCU:\Software\Microsoft\Windows\CurrentVersion\Internet Settings&quot;</span>;<br><br>    <span class="hljs-keyword">if</span> (<span class="hljs-variable">$Addr</span> -eq <span class="hljs-variable">$null</span>) &#123;<br>        Set-ItemProperty -Path <span class="hljs-variable">$proxyReg</span> -Name ProxyEnable -Value 0;<br>        <span class="hljs-built_in">return</span>;<br>    &#125;<br>    Set-ItemProperty -Path <span class="hljs-variable">$proxyReg</span> -Name ProxyServer -Value <span class="hljs-variable">$Addr</span>;<br>    Set-ItemProperty -Path <span class="hljs-variable">$proxyReg</span> -Name ProxyEnable -Value 1;<br>&#125;<br>Function ValidHttpProxyFormat (<span class="hljs-variable">$Addr</span>) &#123;<br>    <span class="hljs-variable">$regex</span> = <span class="hljs-string">&quot;(?:https?:\/\/)(\w+(?:.\w+)*(?::\d+)?)&quot;</span>;<br>    <span class="hljs-variable">$result</span> = <span class="hljs-variable">$Addr</span> -match <span class="hljs-variable">$regex</span>;<br>    <span class="hljs-keyword">if</span> (<span class="hljs-variable">$result</span> -eq <span class="hljs-variable">$false</span>) &#123;<br>        throw [System.ArgumentException]<span class="hljs-string">&quot;The input <span class="hljs-variable">$Addr</span> is not a valid HTTP proxy URI.&quot;</span>;<br>    &#125;<br><br>    <span class="hljs-built_in">return</span> <span class="hljs-variable">$Matches</span>;<br>&#125;<br>Set-Alias set-proxy SetProxy<br>Set-Alias clear-proxy ClearProxy<br></code></pre></td></tr></table></figure>
+
+<h3 id="3-保存，重新打开PowerShell"><a href="#3-保存，重新打开PowerShell" class="headerlink" title="3. 保存，重新打开PowerShell"></a>3. 保存，重新打开PowerShell</h3><p>设置当前窗口代理 ：<code>set-proxy</code></p>
+<p>设置当前窗口代理 + 系统代理：<code>set-proxy -ApplyToSystem</code></p>
+<p>取消当前窗口代理：<code>clear-proxy</code></p>
+<p>取消当前窗口代理 + 系统代理：<code>clear-proxy -ApplyToSystem</code></p>
+<p><code>set-proxy</code>和<code>SetProxy</code>，<code>clear-proxy</code>和<code>ClearProxy</code>可以互相替换</p>
+<h2 id="CMD"><a href="#CMD" class="headerlink" title="CMD"></a>CMD</h2><p>设置代理，窗口关闭后失效</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-built_in">set</span> http_proxy=http://127.0.0.1:19810<br><span class="hljs-built_in">set</span> https_proxy=http://127.0.0.1:19810<br></code></pre></td></tr></table></figure>
+
+<h2 id="Git"><a href="#Git" class="headerlink" title="Git"></a>Git</h2><p>设置Http代理，永久生效</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">git config --global https.proxy https://127.0.0.1:19810<br>git config --global http.proxy http://127.0.0.1:19810<br></code></pre></td></tr></table></figure>
+
+<p>取消代理</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">git config --global --<span class="hljs-built_in">unset</span> http.proxy<br>git config --global --<span class="hljs-built_in">unset</span> https.proxy<br></code></pre></td></tr></table></figure>
 
             </div>
             <hr>
@@ -259,10 +271,25 @@ poj.org 2485.">
                   <div class="post-meta mr-3">
                     <i class="iconfont icon-category"></i>
                     
-                      <a class="hover-with-bg" href="/categories/OJ/">OJ</a>
+                      <a class="hover-with-bg" href="/categories/Windows/">Windows</a>
                     
                   </div>
                 
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/Windows/">Windows</a>
+                    
+                      <a class="hover-with-bg" href="/tags/Proxy/">Proxy</a>
+                    
+                      <a class="hover-with-bg" href="/tags/PowerShell/">PowerShell</a>
+                    
+                      <a class="hover-with-bg" href="/tags/CMD/">CMD</a>
+                    
+                      <a class="hover-with-bg" href="/tags/Git/">Git</a>
+                    
+                  </div>
                 
               </div>
               
@@ -277,15 +304,15 @@ poj.org 2485.">
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2018/04/21/1458/">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">poj1458 最长公共子序列长度</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
+                    
+                      <a href="/2018/10/19/pptp%20route/">
+                        <span class="hidden-mobile">如何让pptp连接/断开后自动添加路由</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
                     
                   </article>
                 </div>
