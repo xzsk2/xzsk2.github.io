@@ -4,6 +4,33 @@
   
   
   <entry>
+    <title>Windows10 右键 ts 文件卡死</title>
+    <link href="/2021/03/22/ts/"/>
+    <url>/2021/03/22/ts/</url>
+    
+    <content type="html"><![CDATA[<blockquote><p>ts文件卡死是怎么回事呢？ts文件相信大家都很熟悉，但是卡死是怎么回事呢？下面就让小编带大家一起了解吧。<br>ts文件卡死，其实就是卡死了。那么ts文件为什么会卡死，相信大家都很好奇是怎么回事。大家可能会感到很惊讶，ts文件怎么会卡死呢？但事实就是这样，小编也感到非常惊讶。那么这就是关于ts文件卡死的事情了，大家有没有觉得很神奇呢？<br>看了今天的内容，大家有什么想法呢？欢迎在评论区告诉小编一起讨论哦。</p></blockquote><span id="more"></span><h2 id="症状"><a href="#症状" class="headerlink" title="症状"></a>症状</h2><p>右键大小较大的.ts文件经常会出现资源管理器卡死或长时间未响应的情况</p><h2 id="解决"><a href="#解决" class="headerlink" title="解决"></a>解决</h2><h3 id="暴力方案"><a href="#暴力方案" class="headerlink" title="暴力方案"></a>暴力方案</h3><p>直接删除<code>mfmpeg2srcsnk.dll</code></p><h3 id="正常方案"><a href="#正常方案" class="headerlink" title="正常方案"></a>正常方案</h3><p>下载并打开 <a href="http://www.nirsoft.net/utils/shexview.html">shexview</a> ，找到<code>MF MPEG Property Handler</code>，右键Disable即可</p><p><img src="/img/posts/ts-1.png"></p><h2 id="Icaros"><a href="#Icaros" class="headerlink" title="Icaros"></a>Icaros</h2><p>使资源管理器支持所有媒体格式的缩略图以及详细信息的软件</p><p><a href="https://www.majorgeeks.com/files/details/icaros.html">下载链接</a></p><div class="group-image-container"><div class="group-image-row"><div class="group-image-wrap"><img src="/img/posts/ts-2.png"></div><div class="group-image-wrap"><img src="/img/posts/ts-3.png"></div></div></div><center>👈启用前&emsp;&emsp;&emsp;&emsp;启用后👉</center>]]></content>
+    
+    
+    <categories>
+      
+      <category>Windows</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Windows</tag>
+      
+      <tag>Media</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>Windows下为PowerShell/CMD/Git设置代理</title>
     <link href="/2021/03/17/proxy/"/>
     <url>/2021/03/17/proxy/</url>
