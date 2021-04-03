@@ -4,6 +4,35 @@
   
   
   <entry>
+    <title>Chrome+SwitchyOmega+Clash的处理</title>
+    <link href="/2021/04/03/clash/"/>
+    <url>/2021/04/03/clash/</url>
+    
+    <content type="html"><![CDATA[<h2 id="症状"><a href="#症状" class="headerlink" title="症状"></a>症状</h2><p>在使用Chrome+SwitchyOmega+Clash的环境下，SwitchyOmega的“代理”操作会将代理请求发送至Clash，由Clash判断是否使用代理。这样就造成了用户想要某个域名走代理，但是Clash规则中默认该域名直连，最终还是直连的情况。</p><span id="more"></span><h2 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h2><h3 id="Clash配置"><a href="#Clash配置" class="headerlink" title="Clash配置"></a>Clash配置</h3><p>配置Clash将来自Chrome的流量全部使用代理</p><p>进入Clash的Settings页面，选择Profiles下的Parsers，编辑配置文件预处理，参考 <a href="https://docs.cfw.lbyczf.com/contents/parser.html">配置文件预处理</a></p><p>其中<code>URL</code>修改为配置文件的URL，<code>节点选择</code>修改为配置文件内的<code>proxy-groups</code>下的<code>name</code>，根据情况选择</p><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-attr">parsers:</span> <span class="hljs-comment"># array</span><br>  <span class="hljs-bullet">-</span> <span class="hljs-attr">url:</span> <span class="hljs-string">URL</span><br>    <span class="hljs-attr">yaml:</span><br>      <span class="hljs-attr">prepend-rules:</span><br>        <span class="hljs-bullet">-</span> <span class="hljs-string">PROCESS-NAME,chrome.exe,节点选择</span><br></code></pre></td></tr></table></figure><h3 id="SwitchyOmega配置"><a href="#SwitchyOmega配置" class="headerlink" title="SwitchyOmega配置"></a>SwitchyOmega配置</h3><p>设置自动切换规则，可以参考 <a href="https://proxy-switchyomega.com/settings/">Proxy SwitchyOmega</a> 配置</p><p>注意在SwitchyOmega内设置为直连的域名将不经过Clash直接访问，设置为代理的域名将无视Clash规则直接代理</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>Windows</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Windows</tag>
+      
+      <tag>Clash</tag>
+      
+      <tag>Chrome</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>Windows10 右键 ts 文件卡死</title>
     <link href="/2021/03/22/ts/"/>
     <url>/2021/03/22/ts/</url>
