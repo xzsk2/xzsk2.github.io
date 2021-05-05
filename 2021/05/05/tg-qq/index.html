@@ -14,12 +14,11 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   
   <meta name="theme-color" content="#2f4154">
-  <meta name="description" content="Prim算法
-poj.org 2485.">
+  <meta name="description" content="">
   <meta name="author" content="Sakari">
   <meta name="keywords" content="">
   
-  <title>poj2485 Prim算法 - Sakari&#39;s Blog</title>
+  <title>Telegram收发QQ信息-EFB和Mirai的Docker部署教程 - Sakari&#39;s Blog</title>
 
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
 
@@ -180,7 +179,7 @@ poj.org 2485.">
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
           <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="poj2485 Prim算法">
+            <span class="h2" id="subtitle" title="Telegram收发QQ信息-EFB和Mirai的Docker部署教程">
               
             </span>
 
@@ -190,8 +189,8 @@ poj.org 2485.">
   
     <span class="post-meta">
       <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-      <time datetime="2018-03-22 00:00" pubdate>
-        2018年3月22日 凌晨
+      <time datetime="2021-05-05 12:30" pubdate>
+        2021年5月5日 下午
       </time>
     </span>
   
@@ -202,7 +201,7 @@ poj.org 2485.">
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      339 字
+      434 字
     </span>
   
 
@@ -212,7 +211,7 @@ poj.org 2485.">
       <i class="iconfont icon-clock-fill"></i>
       
       
-      5
+      6
        分钟
     </span>
   
@@ -242,14 +241,65 @@ poj.org 2485.">
         <div class="py-5" id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">poj2485 Prim算法</h1>
+            <h1 style="display: none">Telegram收发QQ信息-EFB和Mirai的Docker部署教程</h1>
             
             <div class="markdown-body">
-              <p>Prim算法</p>
-<p><a target="_blank" rel="noopener" href="http://poj.org/problem?id=2485">poj.org 2485</a>.</p>
-<span id="more"></span>
+              <h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>Telegram &lt;=&gt; EH Forwarder Bot &lt;=&gt; Mirai &lt;=&gt; QQ</p>
+<h3 id="环境要求"><a href="#环境要求" class="headerlink" title="环境要求"></a>环境要求</h3><ul>
+<li><a target="_blank" rel="noopener" href="https://www.docker.com/">Docker</a></li>
+<li><a target="_blank" rel="noopener" href="https://docs.docker.com/compose/">Docker Compose</a></li>
+<li>能稳定连接到Telegram服务器的网络</li>
+</ul>
+<h3 id="使用项目"><a href="#使用项目" class="headerlink" title="使用项目"></a>使用项目</h3><ul>
+<li><p><a target="_blank" rel="noopener" href="https://github.com/xzsk2/TG-EFB-QQ-Docker">TG-EFB-QQ-Docker</a></p>
+<ul>
+<li><p><a target="_blank" rel="noopener" href="https://github.com/xzsk2/EFB-Docker">EFB-Docker</a></p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/ehForwarderBot/ehForwarderBot">EH Forwarder Bot</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/ehForwarderBot/efb-telegram-master">Telegram Master</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/milkice233/efb-qq-slave">QQ Slave</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/milkice233/efb-qq-plugin-mirai">QQ Plugin Mirai</a></li>
+</ul>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://github.com/xzsk2/Mirai-Docker">Mirai-Docker</a></p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/iTXTech/mirai-console-loader">Mirai Console Loader</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/project-mirai/mirai-api-http">mirai-api-http</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><h3 id="克隆项目"><a href="#克隆项目" class="headerlink" title="克隆项目"></a>克隆项目</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># 克隆</span><br>git <span class="hljs-built_in">clone</span> https://github.com/xzsk2/TG-EFB-QQ-Docker.git<br><span class="hljs-comment"># 进入文件夹</span><br><span class="hljs-built_in">cd</span> TG-EFB-QQ-Docker<br></code></pre></td></tr></table></figure>
 
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br></pre></td><td class="code"><pre><code class="hljs cpp"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&quot;stdafx.h&quot;</span></span><br><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;iostream&gt;</span></span><br><span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> <span class="hljs-built_in">std</span>;<br><br><span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> MAX 1000</span><br><span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> MAXCOST 0x3f3f3f3f</span><br><br><span class="hljs-keyword">int</span> graph[MAX][MAX];<br><br><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">prim</span><span class="hljs-params">(<span class="hljs-keyword">int</span> graph[][MAX], <span class="hljs-keyword">int</span> n)</span> <span class="hljs-comment">//n顶点个数</span></span><br><span class="hljs-function"></span>&#123;<br>	<span class="hljs-keyword">int</span> lowcost[MAX]; <span class="hljs-comment">//lowcost[i]:以i为终点的边的最小权值,lowcost[i]=0表示i点加入了MST</span><br>	<span class="hljs-keyword">int</span> mst[MAX]; <span class="hljs-comment">//mst[i]:对应lowcost[i]的起点,mst[i]=0表示起点i加入MST</span><br>	<span class="hljs-keyword">int</span> i, j, min, minid;<br>	<span class="hljs-keyword">int</span> max = <span class="hljs-number">0</span>;<br>	<span class="hljs-keyword">for</span> (i = <span class="hljs-number">2</span>; i &lt;= n; i++)<br>	&#123;<br>		lowcost[i] = graph[<span class="hljs-number">1</span>][i]; <span class="hljs-comment">//从1开始到所有点的权值</span><br>		mst[i] = <span class="hljs-number">1</span>; <span class="hljs-comment">//对应lowcost[i]的起点为1</span><br>	&#125;<br>	mst[<span class="hljs-number">1</span>] = <span class="hljs-number">0</span>; <span class="hljs-comment">//1点在MST中</span><br>	<span class="hljs-keyword">for</span> (i = <span class="hljs-number">2</span>; i &lt;= n; i++)<br>	&#123;<br>		min = MAXCOST; <span class="hljs-comment">//min为最小权值</span><br>		minid = <span class="hljs-number">0</span>; <span class="hljs-comment">//最小权值对应的点</span><br>		<span class="hljs-keyword">for</span> (j = <span class="hljs-number">2</span>; j &lt;= n; j++)<br>		&#123;<br>			<span class="hljs-keyword">if</span> (lowcost[j] &lt; min &amp;&amp; lowcost[j] != <span class="hljs-number">0</span>)<br>			&#123;<br>				min = lowcost[j];<br>				minid = j;<br>			&#125;<br>		&#125;<br>		<span class="hljs-comment">//输出示例V1-V3=1</span><br>		<span class="hljs-keyword">if</span> (min &gt; max)<br>			max = min; <span class="hljs-comment">//最小权值累加</span><br>		lowcost[minid] = <span class="hljs-number">0</span>; <span class="hljs-comment">//加入MST</span><br>		<span class="hljs-keyword">for</span> (j = <span class="hljs-number">2</span>; j &lt;= n; j++) <span class="hljs-comment">//更新lowcost[]和mst[]</span><br>		&#123;<br>			<span class="hljs-keyword">if</span> (graph[minid][j] &lt; lowcost[j] &amp;&amp; lowcost[j] != <span class="hljs-number">0</span>)<br>			&#123;<br>				lowcost[j] = graph[minid][j];<br>				mst[j] = minid;<br>			&#125;<br>		&#125;<br>	&#125;<br>	<span class="hljs-keyword">return</span> max;<br>&#125;<br><br><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span><br><span class="hljs-function"></span>&#123;<br>	<span class="hljs-keyword">int</span> T;<br>	<span class="hljs-keyword">int</span> s;<br>	<span class="hljs-keyword">int</span> sum;<br>	<span class="hljs-built_in">memset</span>(graph, MAXCOST, <span class="hljs-keyword">sizeof</span>(graph));<br>	<span class="hljs-built_in">scanf</span>(<span class="hljs-string">&quot;%d&quot;</span>, &amp;T);<br>	<span class="hljs-keyword">while</span> (T--)<br>	&#123;<br>		<span class="hljs-built_in">scanf</span>(<span class="hljs-string">&quot;%d&quot;</span>, &amp;s);<br>		<span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">1</span>; i &lt; s + <span class="hljs-number">1</span>; i++)<br>			<span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> j = <span class="hljs-number">1</span>; j &lt; s + <span class="hljs-number">1</span>; j++)<br>			&#123;<br>				<span class="hljs-built_in">scanf</span>(<span class="hljs-string">&quot;%d&quot;</span>, &amp;graph[i][j]);<br>				<span class="hljs-keyword">if</span> (!graph[i][j])<br>					graph[i][j] = MAXCOST;<br>			&#125;<br>		sum = prim(graph, s);<br>		<span class="hljs-built_in">cout</span> &lt;&lt; sum &lt;&lt; <span class="hljs-built_in">endl</span>;<br>	&#125;<br><br>	system(<span class="hljs-string">&quot;pause&quot;</span>);<br>&#125;<br></code></pre></td></tr></table></figure>
+<h3 id="配置Mirai端"><a href="#配置Mirai端" class="headerlink" title="配置Mirai端"></a>配置<code>Mirai</code>端</h3><ol>
+<li><p>编辑<code>./mirai/config/net.mamoe.mirai-api-http/setting.yml</code>，修改<code>authKey</code>，最少8位，记下这个<code>authKey</code>，会在下面配置EFB的过程中用到</p>
+ <figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-attr">authKey:</span> <span class="hljs-string">xxxxxxxx</span><br></code></pre></td></tr></table></figure></li>
+</ol>
+<h3 id="配置EFB端"><a href="#配置EFB端" class="headerlink" title="配置EFB端"></a>配置<code>EFB</code>端</h3><ol>
+<li><p>获取<code>token</code></p>
+<p> 创建一个Bot，向 <a target="_blank" rel="noopener" href="https://t.me/BotFather">@BotFather</a> 发起会话，发送指令 <code>/newbot</code> 开始创建Bot，创建完成后可获取<code>token</code></p>
+</li>
+<li><p>查看自己的<code>Telegram ID</code></p>
+<p> 向 <a target="_blank" rel="noopener" href="https://t.me/get_id_bot">@get_id_bot</a> 发送<code>/start</code>，得到的<code>Chat ID</code>即为用户的<code>Telegram ID</code></p>
+</li>
+<li><p>打开<code>./efb/profiles/default/blueset.telegram/config.yaml</code>，修改下列字段，<code>token</code>修改为上面获取到的<code>Bot token</code>，<code>admins</code>修改为<code>Telegram ID</code>，注意格式</p>
+ <figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-attr">token:</span> <span class="hljs-number">123456789</span><span class="hljs-string">:ABCDEFG1ABCDEFG1ABCDEFG1</span><br><span class="hljs-attr">admins:</span><br><span class="hljs-bullet">-</span> <span class="hljs-number">987654321</span><br></code></pre></td></tr></table></figure></li>
+<li><p>打开<code>./efb/profiles/default/milkice.qq/config.yaml</code>，修改<code>qq</code>和<code>authKey</code></p>
+ <figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-attr">Client:</span> <span class="hljs-string">mirai</span><br><span class="hljs-attr">mirai:</span><br>    <span class="hljs-attr">qq:</span> <span class="hljs-string">xxxxxxxx</span>           <span class="hljs-comment"># 这里换成登录的 QQ 号</span><br>    <span class="hljs-attr">host:</span> <span class="hljs-string">&quot;mirai&quot;</span>       <span class="hljs-comment"># 这个不要改</span><br>    <span class="hljs-attr">port:</span> <span class="hljs-number">8080</span>              <span class="hljs-comment"># 同上</span><br>    <span class="hljs-attr">authKey:</span> <span class="hljs-string">&quot;xxxxxxxx&quot;</span> <span class="hljs-comment"># 这里填入在配置 Mirai API HTTP 时生成的 authKey</span><br></code></pre></td></tr></table></figure></li>
+</ol>
+<h2 id="运行"><a href="#运行" class="headerlink" title="运行"></a>运行</h2><ol>
+<li><p>登录QQ，在<code>docker-compose.yml</code>文件夹下运行</p>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">docker run --rm -it --name=<span class="hljs-string">&quot;mirai&quot;</span> -p 8080:8080 -v <span class="hljs-variable">$PWD</span>/mirai/config:/app/config -v <span class="hljs-variable">$PWD</span>/mirai/bots:/app/bots xzsk2/mirai-docker:latest<br></code></pre></td></tr></table></figure></li>
+<li><p>使用<code>/login</code>登录账号</p>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">/login &lt;qq&gt; &lt;password&gt;    <span class="hljs-comment"># 登录一个账号</span><br></code></pre></td></tr></table></figure></li>
+<li><p>出现<code>Login successful</code>后登录成功，再次运行</p>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">docker run --rm -it --name=<span class="hljs-string">&quot;mirai&quot;</span> -p 8080:8080 -v <span class="hljs-variable">$PWD</span>/mirai/config:/app/config -v <span class="hljs-variable">$PWD</span>/mirai/bots:/app/bots xzsk2/mirai-docker:latest<br></code></pre></td></tr></table></figure></li>
+<li><p>使用<code>/autologin</code>设置自动登录</p>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">/autoLogin add &lt;account&gt; &lt;password&gt; <span class="hljs-comment"># 添加自动登录</span><br></code></pre></td></tr></table></figure></li>
+<li><p>之后退出容器，使用<code>docker-compose</code>运行</p>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">docker-compose up -d<br></code></pre></td></tr></table></figure></li>
+</ol>
 
             </div>
             <hr>
@@ -259,10 +309,23 @@ poj.org 2485.">
                   <div class="post-meta mr-3">
                     <i class="iconfont icon-category"></i>
                     
-                      <a class="hover-with-bg" href="/categories/OJ/">OJ</a>
+                      <a class="hover-with-bg" href="/categories/Linux/">Linux</a>
                     
                   </div>
                 
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/Linux/">Linux</a>
+                    
+                      <a class="hover-with-bg" href="/tags/Docker/">Docker</a>
+                    
+                      <a class="hover-with-bg" href="/tags/Telegram/">Telegram</a>
+                    
+                      <a class="hover-with-bg" href="/tags/QQ/">QQ</a>
+                    
+                  </div>
                 
               </div>
               
@@ -277,15 +340,15 @@ poj.org 2485.">
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2018/04/21/1458/">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">poj1458 最长公共子序列长度</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
+                    
+                      <a href="/2021/04/03/clash/">
+                        <span class="hidden-mobile">Chrome+SwitchyOmega+Clash的处理</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
                     
                   </article>
                 </div>
