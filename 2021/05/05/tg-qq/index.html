@@ -201,7 +201,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      434 字
+      697 字
     </span>
   
 
@@ -211,7 +211,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      6
+      9
        分钟
     </span>
   
@@ -297,9 +297,30 @@
  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">docker run --rm -it --name=<span class="hljs-string">&quot;mirai&quot;</span> -p 8080:8080 -v <span class="hljs-variable">$PWD</span>/mirai/config:/app/config -v <span class="hljs-variable">$PWD</span>/mirai/bots:/app/bots xzsk2/mirai-docker:latest<br></code></pre></td></tr></table></figure></li>
 <li><p>使用<code>/autologin</code>设置自动登录</p>
  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">/autoLogin add &lt;account&gt; &lt;password&gt; <span class="hljs-comment"># 添加自动登录</span><br></code></pre></td></tr></table></figure></li>
-<li><p>之后退出容器，使用<code>docker-compose</code>运行</p>
+<li><p>之后使用<code>CTRL+C</code>退出容器，使用<code>docker-compose</code>启动</p>
  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">docker-compose up -d<br></code></pre></td></tr></table></figure></li>
 </ol>
+<h2 id="本地代理"><a href="#本地代理" class="headerlink" title="本地代理"></a>本地代理</h2><p><strong>如果你的服务器环境可以连接到Telegram服务器，可跳过本章节</strong></p>
+<p>本教程使用 <a target="_blank" rel="noopener" href="https://github.com/TyrantLucifer/ssr-command-client">ssr-command-client</a> 作为本地代理，可参考此项目文档配置</p>
+<ol>
+<li><p>安装</p>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">pip3 install shadowsocksr-cli<br></code></pre></td></tr></table></figure></li>
+<li><p>使用</p>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># 添加订阅链接</span><br>shadowsocksr-cli --add-url 你的ssr订阅链接<br><span class="hljs-comment"># 更新订阅</span><br>shadowsocksr-cli -u<br><span class="hljs-comment"># 启动</span><br>shadowsocksr-cli --fast-node<br></code></pre></td></tr></table></figure></li>
+<li><p>修改<code>EFB</code>配置</p>
+<p> 编辑<code>./TG-EFB-QQ-Docker/efb/profile/\default/blueset.telegram/config.yaml</code>，添加代理</p>
+ <figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-attr">token:</span> <span class="hljs-string">xxx:xxx</span><br><span class="hljs-attr">admins:</span><br><span class="hljs-bullet">-</span> <span class="hljs-string">xxxxxxxx</span><br><span class="hljs-comment"># 添加下面的两行</span><br><span class="hljs-attr">request_kwargs:</span><br>    <span class="hljs-attr">proxy_url:</span> <span class="hljs-string">socks5h://127.0.0.1:1080/</span><br></code></pre></td></tr></table></figure></li>
+<li><p>重启</p>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">docker-compose down<br>docker-compose up -d<br></code></pre></td></tr></table></figure></li>
+</ol>
+<h2 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题"></a>常见问题</h2><ul>
+<li><p>Mirai登陆失败/验证码/版本过低？</p>
+<p>  请尝试先在本地桌面环境下部署Mirai，如需要滑动验证码请使用 <a target="_blank" rel="noopener" href="https://github.com/project-mirai/mirai-login-solver-selenium">mirai-login-solver-selenium</a>，或修改登录协议</p>
+</li>
+<li><p>无法发送群消息，只能接收？</p>
+<p>  无法发送大于三个字符的群消息，接收正常；好友消息的收发正常。这种情况是触发了TX的风控，一般服务器上挂12小时-2天即可正常</p>
+</li>
+</ul>
 
             </div>
             <hr>
