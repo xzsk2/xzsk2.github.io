@@ -201,7 +201,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      697 字
+      711 字
     </span>
   
 
@@ -306,10 +306,10 @@
 <li><p>安装</p>
  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">pip3 install shadowsocksr-cli<br></code></pre></td></tr></table></figure></li>
 <li><p>使用</p>
- <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># 添加订阅链接</span><br>shadowsocksr-cli --add-url 你的ssr订阅链接<br><span class="hljs-comment"># 更新订阅</span><br>shadowsocksr-cli -u<br><span class="hljs-comment"># 启动</span><br>shadowsocksr-cli --fast-node<br></code></pre></td></tr></table></figure></li>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs bash">   <span class="hljs-comment"># 添加订阅链接</span><br>   shadowsocksr-cli --add-url 你的ssr订阅链接<br>   <span class="hljs-comment"># 更新订阅</span><br>   shadowsocksr-cli -u<br>   <span class="hljs-comment"># 启动</span><br>   shadowsocksr-cli --fast-node<br><span class="hljs-comment"># 修改监听地址</span><br>shadowsocksr-cli --setting-address 0.0.0.0<br></code></pre></td></tr></table></figure></li>
 <li><p>修改<code>EFB</code>配置</p>
-<p> 编辑<code>./TG-EFB-QQ-Docker/efb/profile/\default/blueset.telegram/config.yaml</code>，添加代理</p>
- <figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-attr">token:</span> <span class="hljs-string">xxx:xxx</span><br><span class="hljs-attr">admins:</span><br><span class="hljs-bullet">-</span> <span class="hljs-string">xxxxxxxx</span><br><span class="hljs-comment"># 添加下面的两行</span><br><span class="hljs-attr">request_kwargs:</span><br>    <span class="hljs-attr">proxy_url:</span> <span class="hljs-string">socks5h://127.0.0.1:1080/</span><br></code></pre></td></tr></table></figure></li>
+<p> 编辑<code>./TG-EFB-QQ-Docker/efb/profile/default/blueset.telegram/config.yaml</code>，添加代理</p>
+ <figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-attr">token:</span> <span class="hljs-string">xxx:xxx</span><br><span class="hljs-attr">admins:</span><br><span class="hljs-bullet">-</span> <span class="hljs-string">xxxxxxxx</span><br><span class="hljs-comment"># 添加下面的两行</span><br><span class="hljs-attr">request_kwargs:</span><br>    <span class="hljs-attr">proxy_url:</span> <span class="hljs-string">socks5h://172.17.0.1:1080/</span><br></code></pre></td></tr></table></figure></li>
 <li><p>重启</p>
  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">docker-compose down<br>docker-compose up -d<br></code></pre></td></tr></table></figure></li>
 </ol>
